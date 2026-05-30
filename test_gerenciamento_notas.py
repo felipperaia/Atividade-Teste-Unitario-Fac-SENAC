@@ -55,6 +55,7 @@ def test_calcular_media_sem_notas_retorna_zero():
         ([5, 6.9], "recuperação"),
         ([0, 4.9], "reprovado"),
     ],
+    ids=["aprovado", "recuperacao", "reprovado"],
 )
 def test_verificar_situacao_do_aluno(notas, situacao):
     sistema = GerenciamentoNotas()
@@ -70,6 +71,7 @@ def test_verificar_situacao_do_aluno(notas, situacao):
         ([5], "recuperação"),
         ([4.99], "reprovado"),
     ],
+    ids=["limite_aprovado", "limite_recuperacao", "limite_reprovado"],
 )
 def test_verificar_situacao_nos_limites(notas, situacao):
     sistema = GerenciamentoNotas()
