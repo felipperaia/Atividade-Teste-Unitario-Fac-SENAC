@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Test and tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local/editor files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Class materials are used as reference, but are not part of the public code delivery.
+*.pdf
